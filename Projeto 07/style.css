@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #404040;
+  padding: 30px;
+}
+
+.page {
+  background-image: url(./assets/fundo.svg);
+  background-repeat: no-repeat;
+  width: 1450px;
+  height: 1024px;
+  margin: 0 auto;
+}
+
+.buraco {
+  background-image: url(./assets/toupeira6.svg);
+  background-repeat: no-repeat;
+}
+
+.top {
+  display: grid;
+  gap: 10px;
+  padding: 190px;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 180px 180px 180px;
+  justify-content: center;
+
+  grid-template-areas:
+    'A B C D'
+    'E F G H'
+    'I J K L';
+}
+
+main .top div:nth-child(1) {
+  grid-area: A;
+  animation: topini;
+  animation-duration: 1500ms;
+  animation-delay: 3s;
+}
+
+main .top div:nth-child(2) {
+  grid-area: B;
+}
+
+main .top div:nth-child(3) {
+  grid-area: C;
+}
+
+main .top div:nth-child(4) {
+  grid-area: D;
+  animation: topini;
+  animation-duration: 1500ms;
+  animation-delay: 6s;
+}
+
+main .top div:nth-child(5) {
+  grid-area: E;
+}
+
+main .top div:nth-child(6) {
+  grid-area: F;
+  animation: topini;
+  animation-duration: 1500ms;
+  animation-delay: 9s;
+}
+
+main .top div:nth-child(7) {
+  grid-area: G;
+}
+
+main .top div:nth-child(8) {
+  grid-area: H;
+  animation: topini;
+  animation-duration: 1500ms;
+  animation-delay: 12s;
+}
+
+main .top div:nth-child(9) {
+  grid-area: I;
+}
+
+main .top div:nth-child(10) {
+  grid-area: J;
+}
+
+main .top div:nth-child(11) {
+  grid-area: K;
+  animation: topini;
+  animation-duration: 1500ms;
+  animation-delay: 15s;
+}
+
+main .top div:nth-child(12) {
+  grid-area: L;
+}
+
+@keyframes topini {
+  0% {
+    background-image: url(./assets/toupeira1.svg);
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  20% {
+    background-image: url(./assets/toupeira2.svg);
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  40% {
+    background-image: url(./assets/toupeira3.svg);
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  60% {
+    background-image: url(./assets/toupeira4.svg);
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: 1;
+  }
+  80% {
+    background-image: url(./assets/toupeira5.svg);
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: 1;
+  }
+  100% {
+    background-image: url(./assets/toupeira6.svg);
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: 1;
+  }
+}
